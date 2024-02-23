@@ -172,8 +172,9 @@ if goblin_enc_2 == 1:
     p_delay("You have to find Ayla.",3)
     p_delay("Tightness in your arms",3)
     p_delay("Throbbing muscles",3)
-    p_delay("You gasp for breath",3)
-    p_delay("Finally, you look down at your sister's body",3)
+    p_delay("You gasp for breath.",3)
+    pause_stop(3,2)
+    p_delay("Finally, you look down at your sister's body.",3)
     p_delay("She is so still, so beautiful in death.")
     p_delay("She was all you had left.",3)
     p_delay("On this night, the dagger claims two souls.",3)
@@ -182,7 +183,7 @@ if goblin_enc_2 == 1:
 
 if goblin_enc_2 == 2:
     p_delay("The goblin moves to kill.",3)
-    p_delay("A vicious, downward strike",3)
+    p_delay("A vicious, downward strike.",3)
     p_delay("You avoid the blow, readying your stance to counter.",3)
     p_delay("Darkness.", 5)
     pause_stop(5,1)
