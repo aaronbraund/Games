@@ -181,6 +181,7 @@ if goblin_enc_2 == 1:
     p_delay("You failed her.",3)
     print("Ending E")
 
+#ending F
 if goblin_enc_2 == 2:
     p_delay("The goblin moves to kill.",3)
     p_delay("A vicious, downward strike.",3)
