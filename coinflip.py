@@ -5,6 +5,6 @@ while True:
     if coin_flip == 0:
         print("Heads")
     else:
-        print ("Tailz")
+        print ("Tails")
     break
 
