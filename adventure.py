@@ -5,6 +5,12 @@ def p_delay(message,delay=1):
     print(message)
     time.sleep(delay)
 
+#function that prints full stops one by one for suspense
+def pause_stop(num_stops, delay=1):
+    for stops in range(num_stops):
+        print('.', end='', flush=True)
+        time.sleep(delay)
+
 #setting the scene
 p_delay("You are walking through a forest.",3)
 p_delay("You're not sure how you got here.",3)
@@ -164,11 +170,21 @@ if goblin_enc_2 == 1:
     p_delay("Again. And again. And again.",3)
     p_delay("The creature is dead.",3)
     p_delay("You have to find Ayla.",3)
-    p_delay("Tightness in your arms, throbbing muscles, you gasp for breath.",3)
-    p_delay("You look down at your sister's body",3)
+    p_delay("Tightness in your arms",3)
+    p_delay("Throbbing muscles",3)
+    p_delay("You gasp for breath",3)
+    p_delay("Finally, you look down at your sister's body",3)
     p_delay("She is so still, so beautiful in death.")
     p_delay("She was all you had left.",3)
     p_delay("On this night, the dagger claims two souls.",3)
     p_delay("You failed her.",3)
     print("Ending E")
+
+if goblin_enc_2 == 2:
+    p_delay("The goblin moves to kill.",3)
+    p_delay("A vicious, downward strike",3)
+    p_delay("You avoid the blow, readying your stance for a counter strike.",3)
+    p_delay("Darkness.", 5)
+    pause_stop(5,2)
+
 print("More coming soon!")
