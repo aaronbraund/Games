@@ -183,8 +183,8 @@ if goblin_enc_2 == 1:
 if goblin_enc_2 == 2:
     p_delay("The goblin moves to kill.",3)
     p_delay("A vicious, downward strike",3)
-    p_delay("You avoid the blow, readying your stance for a counter strike.",3)
+    p_delay("You avoid the blow, readying your stance to counter.",3)
     p_delay("Darkness.", 5)
-    pause_stop(5,2)
+    pause_stop(5,1)
 
 print("More coming soon!")
