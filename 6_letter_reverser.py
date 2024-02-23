@@ -8,3 +8,4 @@ char5 = word[-5]
 char6 = word[-6]
 
 print(char1 + char2 + char3 + char4 + char5 + char6)
+print("this is a really bad game")
