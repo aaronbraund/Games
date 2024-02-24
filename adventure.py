@@ -14,8 +14,8 @@ def pause_stop(num_stops, delay=1):
 #setting the scene
 p_delay("You are walking through a forest.",3)
 p_delay("You're not sure how you got here.",3)
-p_delay("It is dark, moonlight breaks through the trees",3)
-p_delay("It offers little reprieve against the impenetrable darkness",3)
+p_delay("It is dark, moonlight breaks through the trees.",3)
+p_delay("It offers little reprieve against the darkness.",3)
 p_delay("You remember.",3)
 p_delay("Your sister is lost.",3)
 p_delay("Somewhere in this forest.",3)
@@ -131,18 +131,18 @@ if goblin_enc == 2:
 
 if goblin_enc == 3:
     p_delay("The goblin moves slowly towards you.",3)
-    p_delay("Moonlight illuminates its scarred, dishevelled body",3)
-    p_delay("A tapestry of battles - won and lost",3)
-    p_delay("In its hand, a jagged club, worn and battered", 3)
+    p_delay("Moonlight illuminates its scarred, dishevelled body.",3)
+    p_delay("A tapestry of battles - won and lost.",3)
+    p_delay("In its hand, a jagged club, worn and battered.", 3)
     p_delay("A hunter who wants to spill your blood.",3)
-    p_delay("You grip the dagger, with all your might",3)
+    p_delay("You grip the dagger, with all your might.",3)
     p_delay("You must kill this creature.",3)
     p_delay("You must find Ayla.")
 
     while True:
         try:
             goblin_counter = 0
-            player_choice_4 = input("Attack or dodge?" ).lower()
+            player_choice_4 = input("Attack or dodge? ").lower()
             if player_choice_4 == "attack":
                 goblin_enc_2 = 1
                 p_delay("You lunge with your blade, aiming for the creature's heart.", 3)
@@ -186,7 +186,7 @@ if goblin_enc_2 == 2:
     p_delay("The goblin moves to kill.",3)
     p_delay("A vicious, downward strike.",3)
     p_delay("You avoid the blow, readying your stance to counter.",3)
-    p_delay("Darkness.", 5)
-    pause_stop(5,1)
+    p_delay("Darkness.",2)
+    pause_stop(5,2)
 
 print("More coming soon!")
