@@ -11,6 +11,9 @@ def pause_stop(num_stops, delay=1):
         print('.', end='', flush=True)
         time.sleep(delay)
 
+wolf_speech = ["I", "AM", "THE", "GOD", "OF", "THIS", "FOREST"]
+wolf_speech_2 = ["FOOLISH", "CHILD", "WHAT", "DO", "YOU", "SEEK"]
+
 #setting the scene
 p_delay("You are walking through a forest.",3)
 p_delay("You're not sure how you got here.",3)
@@ -142,7 +145,7 @@ if goblin_enc == 3:
     while True:
         try:
             goblin_counter = 0
-            player_choice_4 = input("Attack or dodge? ").lower()
+            player_choice_4 = input("Attack or dodge? Choose: ").lower()
             if player_choice_4 == "attack":
                 goblin_enc_2 = 1
                 p_delay("You lunge with your blade, aiming for the creature's heart.", 3)
@@ -181,12 +184,85 @@ if goblin_enc_2 == 1:
     p_delay("You failed her.",3)
     print("Ending E")
 
-#ending F
+#ending F and G
 if goblin_enc_2 == 2:
     p_delay("The goblin moves to kill.",3)
     p_delay("A vicious, downward strike.",3)
     p_delay("You avoid the blow, readying your stance to counter.",3)
     p_delay("Darkness.",2)
     pause_stop(5,2)
+    p_delay("Your consciousness returns.",3)
+    p_delay("Blurry, swimming, your eyes adjust.",3)
+    p_delay("The forest above you, breaching moonlight.",3)
+    p_delay("Ayla.",3)
+    p_delay("You feel a sharp sting on the back of your head.",3)
+    p_delay("Legs like twigs, fumbling for support.",3)
+    p_delay("Unsteady, you scan the forest for your attackers.",3)
+    pause_stop(3,1)
+    p_delay("Dead.",3)
+    p_delay("All of them.",3)
+    pause_stop(3, 1)
+    p_delay("Dark, broken corpses litter the forest floor.",3)
+    p_delay("Twisted, tangled, mangled into grotesque new forms.",3)
+    p_delay("Living canvases made with teeth and claws.",3)
+    p_delay("They stood no chance.",3)
+    p_delay("None of it matters.",3)
+    p_delay("You must find Ayla.",3)
+    p_delay("You walk, still collecting your senses.",3)
+    p_delay("The dagger.",3)
+    pause_stop(3,1)
+    p_delay("Gone. Taken.",3)
+    p_delay("You have no way to fight.",3)
+    pause_stop(3,1)
+    p_delay("The wolf watches you.",3)
+    p_delay("A deadly curiosity.",3)
+    p_delay("It steps into the moonlight for a moment.",3)
+    p_delay("Dried blood crusts the creatures fur.",3)
+    p_delay("A face of terrible truth and deceit.",3)
+    p_delay("A born hunter one side.",3)
+    p_delay("From the other, diseased, rotting - a hideous ruse.",3)
+    p_delay("It sees you.",3)
+    p_delay("Deadly curiosity turns to hunger.",3)
+    p_delay("It snarls, you see it's jagged canines, the stained fangs.",3)
+    p_delay("You can't overpower this creature.",3)
 
+while True:
+    try:
+        player_choice_5 = input("Run or submit? Choose: ").lower()
+        if player_choice_5 == "run":
+            wolf_encounter = 1
+            p_delay("You try to run - and the wolf follows.", 3)
+            break
+        elif player_choice_5 == "submit":
+            wolf_encounter = 2
+            p_delay("You fall to your knees.", 3)
+            break
+    except ValueError:
+        print("The wolf draws closer.", 3)
+
+if wolf_encounter == 1:
+    p_delay("The wolf is on you in moments.",3)
+    p_delay("A blinding pain, tears across your back.",3)
+    p_delay("You fall.",3)
+    p_delay("The wolf drags you.",3)
+    p_delay("Consciousness, ebbing and flowing.",3)
+    p_delay("There is no more moonlight.",3)
+    p_delay("Only darkness.",3)
+    p_delay("And the sounds of many, terrible gnashing teeth.")
+    pause_stop(5,1)
+    p_delay("You failed her.",1)
+    print("Ending F")
+
+if wolf_encounter == 2:
+    p_delay("Deadly curiosity returns.",3)
+    p_delay("The wolf speaks.",3)
+    for text in wolf_speech:
+        print(text, end=' ', flush=True)
+        time.sleep(1.5)
+    print()
+    time.sleep(2)
+    for text in wolf_speech_2:
+        print(text, end=' ', flush=True)
+        time.sleep(1.5)
+    print()
 print("More coming soon!")
