@@ -292,7 +292,7 @@ if wolf_encounter == 2:
     p_delay("Darkness, brief moonlight, an encroaching, dense forest.",3)
     p_delay("The wolf looks back at you.",3)
     p_delay("It faces forward, walking into a black bush.",3)
-    p_delay("You sense the end of your journey.")
+    p_delay("You sense the end of your journey.",3)
     p_delay("You follow the wolf.",3)
     p_delay("The black thorns tear at your flesh.",3)
     p_delay("Cruel, unyielding, legion.",3)
