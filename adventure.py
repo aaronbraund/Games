@@ -11,8 +11,10 @@ def pause_stop(num_stops, delay=1):
         print('.', end='', flush=True)
         time.sleep(delay)
 
-wolf_speech = ["I", "AM", "THE", "GOD", "OF", "THIS", "FOREST"]
-wolf_speech_2 = ["FOOLISH", "CHILD", "WHAT", "DO", "YOU", "SEEK"]
+wolf_speech = ["CURIOUS", "YOU", "DO", "NOT", "FEAR", "ME?"]
+wolf_speech_2 = ["I", "AM", "THE", "GOD", "OF", "THIS", "FOREST."]
+wolf_speech_3 = ["CHILD", "WHAT", "DO", "YOU", "SEEK"]
+wolf_speech_4 = ["VERY", "WELL"]
 
 #setting the scene
 p_delay("You are walking through a forest.",3)
@@ -248,7 +250,7 @@ if wolf_encounter == 1:
     p_delay("Consciousness, ebbing and flowing.",3)
     p_delay("There is no more moonlight.",3)
     p_delay("Only darkness.",3)
-    p_delay("And the sounds of many, terrible gnashing teeth.")
+    p_delay("And the sounds of scraping teeth.")
     pause_stop(5,1)
     p_delay("You failed her.",1)
     print("Ending F")
@@ -260,9 +262,56 @@ if wolf_encounter == 2:
         print(text, end=' ', flush=True)
         time.sleep(1.5)
     print()
-    time.sleep(2)
+    p_delay("No words come to you",3)
+    p_delay("Your vision swims.",3)
+    p_delay("The wolf's face morphs into new aberrant formations.",3)
+    p_delay("Death... and life.",3)
+    p_delay("A contorting fractal.")
     for text in wolf_speech_2:
         print(text, end=' ', flush=True)
         time.sleep(1.5)
     print()
+    for text in wolf_speech_3:
+        print(text, end=' ', flush=True)
+        time.sleep(1.5)
+    print()
+    p_delay("Ayla...",3)
+    p_delay("That is all you want.",3)
+    p_delay("Find her.",3)
+    p_delay("Seek shelter",3)
+    p_delay("Protect her. Always.",3)
+
+    for text in wolf_speech_4:
+        print(text, end=' ', flush=True)
+        time.sleep(1.5)
+    print()
+
+    p_delay("The wolf motions you to follow.",3)
+    p_delay("You rise, slowly - following the god.",3)
+    p_delay("You walk, for an eternity.",3)
+    p_delay("Darkness, brief moonlight, an encroaching, dense forest.",3)
+    p_delay("The wolf looks back at you.",3)
+    p_delay("With a brief glance, it walks into a thorny black bush.",3)
+    p_delay("You sense the end of your journey.")
+    p_delay("You follow the wolf.",3)
+    p_delay("The black thorns tear at your flesh.",3)
+    p_delay("Cruel, unyielding, legion.",3)
+    p_delay("A tangled, unforgiving mass.",3)
+    p_delay("Suddenly, a clearing, a single tree - basked in light.",3)
+    p_delay("A protective wall of thorns.",3)
+    p_delay("You bleed, it won't stop.",3)
+    p_delay("The wolf awaits you by the tree.",3)
+    p_delay("Ayla's corpse focuses your vision.",3)
+    p_delay("The trees roots bury into her.",3)
+    p_delay("A glistening cocoon, pulses gently.",3)
+    p_delay("Life and death.",3)
+    p_delay("You collapse by her body",3)
+    p_delay("You are together, forever.",3)
+    p_delay("A part of the forest.",3)
+    pause_stop(5, 1)
+    p_delay("The wolf eats.")
+    pause_stop(5, 1)
+    p_delay("You failed her.",3)
+    print("Ending G")
+
 print("More coming soon!")
