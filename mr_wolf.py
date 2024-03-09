@@ -33,3 +33,4 @@ while True:
         elif wake_up_wolf == 3:
             print("It's DINNERTIME")
             quit()
+print("Test")
