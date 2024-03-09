@@ -1,10 +1,12 @@
-import random
-coin_flip = random.randint(0,1)
+from random import randint as rand
 
-while True:
-    if coin_flip == 0:
-        print("Heads")
-    else:
-        print ("Tails")
-    break
+class CoinFlip:
+    def flip(self):
+        if rand(0,1) == 0:
+            print("Heads")
+        else:
+            print("Tails")
 
+coin = CoinFlip()
+
+coin.flip()
